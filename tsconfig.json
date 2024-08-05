@@ -18,6 +18,15 @@
       }
     ],
     "paths": {
+      "@sections/*": ["./app/(pages)/(landing page)/sections/*"],
+      "@components/*": ["./app/components/*"],
+      "@constanst/*": ["./app/constants/*"],
+      "@helpers/*": ["./app/helpers/*"],
+      "@layout/*": ["./app/layout/*"],
+      "@motion/*": ["./app/motion/*"],
+      "@auth/*": ["./app/(pages)/(auth)/*"],
+      "@landing-page/*": ["./app/(pages)/(landing page)/*"],
+      "@market-place/*": ["./app/(pages)/(market place)/*"],
       "@/*": ["./*"]
     }
   },
