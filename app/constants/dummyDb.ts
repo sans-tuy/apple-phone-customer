@@ -56,4 +56,10 @@ const dataDummyProducts = [
   },
 ];
 
-export { dataDummyProducts };
+const variants = [
+  { key: "8/256", value: "8/256 GB", soldOut: false },
+  { key: "12/256", value: "12/256 GB", soldOut: false },
+  { key: "16/256", value: "16/256 GB", soldOut: true },
+];
+
+export { dataDummyProducts, variants };

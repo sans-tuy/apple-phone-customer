@@ -1,5 +1,6 @@
 import { nextui } from "@nextui-org/react";
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
   content: [
@@ -41,6 +42,34 @@ const config: Config = {
     },
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [
+    nextui(),
+    plugin(function ({ addUtilities }) {
+      const newUtilities = {
+        ".xl-bold-base": {
+          fontSize: "32px",
+          fontWeight: "bold",
+          lineHeight: "38.73px",
+        },
+        ".md-bold-base": {
+          fontSize: "24px",
+          fontWeight: "bold",
+          lineHeight: "29.05px",
+        },
+        ".sm-bold-base": {
+          fontSize: "16px",
+          fontWeight: "bold",
+          lineHeight: "19.36px",
+        },
+        ".sm-md-base": {
+          fontSize: "16px",
+          fontWeight: "normal",
+          lineHeight: "19.36px",
+        },
+      };
+
+      addUtilities(newUtilities);
+    }),
+  ],
 };
 export default config;

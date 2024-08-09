@@ -5,15 +5,21 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "img.daisyui.com",
+        hostname: "swiperjs.com",
         port: "",
-        pathname: "/images/**",
+        pathname: "/demos/images/**",
       },
       {
         protocol: "https",
         hostname: "cdnpro.eraspace.com",
         port: "",
         pathname: "/media/catalog/product/**",
+      },
+      {
+        protocol: "https",
+        hostname: "cdn-icons-png.flaticon.com",
+        port: "",
+        pathname: "/**",
       },
     ],
   },
